@@ -97,7 +97,7 @@ Access the page [http://localhost:8000](http://localhost:8000) in your browser.
 }
 ```
 
-#### Edit product
+#### Get User Type
 
 - **Method**: GET
 - **URL**: http://localhost:8000/api/user/type/1
@@ -110,7 +110,7 @@ Access the page [http://localhost:8000](http://localhost:8000) in your browser.
 
 ## 🛠️ Technologies Used
 
-- PHP (version 8.1)
-- Laravel (version 10)
+- PHP (version 8.2)
+- Laravel (version 11)
 - Redis (latest version from Docker)
 - MySQL (latest version from Docker)
