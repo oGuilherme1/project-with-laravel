@@ -65,8 +65,8 @@ Access the page [http://localhost:8000](http://localhost:8000) in your browser.
 
 ```json
 {
-    "email": "test@gmail.com",
-    "password": "1234"
+	"email": "teste@gmail.com",
+	"password":"0102030405",
 }
 ```
 
