@@ -16,11 +16,11 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 # Instala extensões do PHP necessárias
 RUN docker-php-ext-install pdo_mysql mbstring pcntl
 
-# Define o diretório de trabalho como /app
-WORKDIR /app
-
 # Copia os arquivos do aplicativo para o contêiner
 COPY . /app
 
-# Instala as dependências do Composer
-RUN composer install
+# Define o diretório de trabalho como /app
+WORKDIR /app
+
+# Instalando dependências do projeto e iniciando o servidor do laravel
+CMD bash -c "composer install && php artisan serve --host 0.0.0.0"
