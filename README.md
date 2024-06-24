@@ -31,8 +31,15 @@ php artisan key:generate
 ```
 
 Wait a few seconds for the laravel server to start, otherwise the command below displays a connection error
+
 ```bash
 php artisan migrate
+```
+CreateUser will throw an error due to the UserCreated event, you just need to comment out the line - 37 $this->dispatchEvent($aUser)
+It's in the file Src\Users\Application\UseCases\User\CreateUserUseCase 
+
+```bash
+php artisan test
 ```
 
 ```bash
