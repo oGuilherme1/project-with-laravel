@@ -18,3 +18,9 @@ RUN docker-php-ext-install pdo_mysql mbstring pcntl
 
 # Define o diretório de trabalho como /app
 WORKDIR /app
+
+# Copia os arquivos do aplicativo para o contêiner
+COPY . /app
+
+# Instala as dependências do Composer
+RUN composer install
