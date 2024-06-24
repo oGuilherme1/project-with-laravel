@@ -37,7 +37,7 @@ php artisan migrate
 ```
 CreateUser will throw an error due to the UserCreated event, you just need to comment out the line
 
--37 $this->dispatchEvent($aUser)
+- 37 $this->dispatchEvent($aUser)
 
 It's in the file Src\Users\Application\UseCases\User\CreateUserUseCase 
 
